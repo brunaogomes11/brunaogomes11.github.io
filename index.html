@@ -66,6 +66,7 @@
 (async () => {
     const rawResponse = await fetch('https://granto-api.herokuapp.com/testar', {
       method: 'POST',
+      mode: "no-cors",
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
